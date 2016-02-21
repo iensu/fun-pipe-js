@@ -1,0 +1,29 @@
+{
+  "name": "fun-pipe",
+	"version": "0.1.0",
+  "description": "A module for pipe functions, applying them in successive order",
+  "main": "fun-pipe.js",
+  "authors": [
+    "Jens Östlund (iensu)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "function",
+    "composition",
+    "pipe",
+    "functional",
+    "promise"
+  ],
+  "homepage": "https://github.com/iensu/fun-pipe-js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

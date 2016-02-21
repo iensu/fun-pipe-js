@@ -1,0 +1,35 @@
+{
+  "name": "fun-pipe",
+  "version": "0.1.0",
+  "description": "A module for pipe functions, applying them in successive order",
+  "main": "fun-pipe.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "author": "Jens Östlund (iensu)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "mocha": "^2.4.5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iensu/fun-pipe-js.git"
+  },
+  "keywords": [
+    "function",
+    "composition",
+    "pipe",
+    "functional",
+    "promise"
+  ],
+  "bugs": {
+    "url": "https://github.com/iensu/fun-pipe-js/issues"
+  },
+  "homepage": "https://github.com/iensu/fun-pipe-js#readme"
+}

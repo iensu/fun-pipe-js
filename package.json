@@ -1,6 +1,6 @@
 {
   "name": "fun-pipe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A module for pipe functions, applying them in successive order",
   "main": "fun-pipe.js",
   "scripts": {

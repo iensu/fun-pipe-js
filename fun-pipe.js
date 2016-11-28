@@ -10,7 +10,7 @@
   }
 
   function applyFunction (x, fn) {
-    if (typeof x.then === 'function') {
+    if (isPromise(x)) {
       return x.then(function (result) {
         return fn(result);
       });
@@ -22,6 +22,10 @@
     return function (x) {
       return fns.reduce(applyFunction, x);
     };
+  }
+
+  function isPromise(x) {
+    return x && typeof x.then === 'function';
   }
 
   if (module && module.exports) {

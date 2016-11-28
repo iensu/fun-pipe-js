@@ -3,6 +3,7 @@
 var chai = require('chai');
 chai.use(require('chai-as-promised'));
 chai.should();
+const expect = chai.expect;
 
 var funPipe = require('../fun-pipe.js');
 
@@ -10,9 +11,12 @@ describe('fun-pipe', function () {
 
   function f(s) {
     return s.toUpperCase();
-  };
+  }
   function g(s) {
     return s.replace('A', 'x');
+  }
+  function identity(x) {
+    return x;
   }
 
   it('should apply its functions in order', function () {
@@ -26,6 +30,10 @@ describe('fun-pipe', function () {
 
   it('should execute the pipe line if the first argument is NOT a function', () => {
     funPipe('hejsan', f, g).should.equal(g(f('hejsan')));
+  });
+
+  it('should handle an undefined input value', () => {
+    expect(funPipe(identity)(undefined)).to.equal(undefined);
   });
 
   it('should work with promises as its input data', () => {
